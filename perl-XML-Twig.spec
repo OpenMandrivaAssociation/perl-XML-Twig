@@ -1,6 +1,6 @@
 %define module  XML-Twig
 %define name    perl-%{module}
-%define version 3.30
+%define version 3.31
 %define release %mkrel 1
 
 Name:          %{name}
