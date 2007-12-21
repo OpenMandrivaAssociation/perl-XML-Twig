@@ -25,6 +25,7 @@ BuildRequires:	perl-XML-Simple
 BuildRequires:	perl-XML-XPath
 BuildRequires:	perl-XML-XPathEngine
 BuildArch:      noarch
+BuildRoot:      %{_tmppath}/%{name}-%{version}
 
 %description
 XML::Twig is a Perl module that subclasses XML-Parser to allow easy
