@@ -1,16 +1,16 @@
-%define module  XML-Twig
-%define name    perl-%{module}
-%define version 3.32
-%define release %mkrel 3
+%define upstream_name    XML-Twig
+%define upstream_version 3.32
 
-Name:          %{name}
-Version:       %{version}
-Release:       %{release}
+Name:          perl-%{upstream_name}
+Version:       %perl_convert_version %{upstream_version}
+Release:       %mkrel 1
+
 Summary:        A perl module for processing huge XML documents in tree mode
 License:        Artistic
 Group:          Development/Perl
-Source:         http://www.xmltwig.com/xmltwig/%{module}-%{version}.tar.bz2
 Url:            http://www.xmltwig.com/xmltwig/
+Source0:        http://www.xmltwig.com/xmltwig/%{upstream_name}-%{upstream_version}.tar.bz2
+
 %if %{mdkversion} < 1010
 BuildRequires:  perl-devel
 %endif
@@ -24,15 +24,15 @@ BuildRequires:	perl-Unicode-Map8
 BuildRequires:	perl-XML-Simple
 BuildRequires:	perl-XML-XPath
 BuildRequires:	perl-XML-XPathEngine
-BuildArch:      noarch
-BuildRoot:      %{_tmppath}/%{name}-%{version}
+BuildArch: noarch
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 XML::Twig is a Perl module that subclasses XML-Parser to allow easy
 processing of XML documents of all sizes.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 # TODO: maintainer: package them if requested...
@@ -58,4 +58,3 @@ rm -rf %{buildroot}
 %{perl_vendorlib}/XML
 %{_mandir}/*/*
 %{_bindir}/*
-
