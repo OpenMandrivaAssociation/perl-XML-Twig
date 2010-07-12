@@ -1,5 +1,5 @@
 %define upstream_name    XML-Twig
-%define upstream_version 3.34
+%define upstream_version 3.35
 
 Name:          perl-%{upstream_name}
 Version:       %perl_convert_version %{upstream_version}
