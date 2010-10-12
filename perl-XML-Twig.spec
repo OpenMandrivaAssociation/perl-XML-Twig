@@ -1,9 +1,9 @@
 %define upstream_name    XML-Twig
-%define upstream_version 3.35
+%define upstream_version 3.37
 
 Name:          perl-%{upstream_name}
 Version:       %perl_convert_version %{upstream_version}
-Release:       %mkrel 2
+Release:       %mkrel 1
 
 Summary:        A perl module for processing huge XML documents in tree mode
 License:        Artistic
