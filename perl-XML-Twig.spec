@@ -1,5 +1,5 @@
 %define upstream_name    XML-Twig
-%define upstream_version 3.38
+%define upstream_version 3.42
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
@@ -8,8 +8,8 @@ Release:	6
 Summary:	A perl module for processing huge XML documents in tree mode
 License:	Artistic
 Group:		Development/Perl
-Url:		http://www.xmltwig.com/xmltwig/
-Source0:	http://www.xmltwig.com/xmltwig/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		http://www.mirod.org/xmltwig/
+Source0:	http://www.mirod.org/xmltwig/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(XML::Parser)
@@ -21,6 +21,12 @@ BuildRequires:	perl(Unicode::Map8)
 BuildRequires:	perl(XML::Simple)
 BuildRequires:	perl(XML::XPath)
 BuildRequires:	perl(XML::XPathEngine)
+BuildRequires:  perl(Test::Pod)
+BuildRequires:  perl(IO::CaptureOutput)
+BuildRequires:  perl(IO::Scalar)
+BuildRequires:  perl(XML::Filter::BufferText)
+BuildRequires:  perl(XML::SAX::Writer)
+BuildRequires:  expat
 
 BuildArch:	noarch
 
