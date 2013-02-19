@@ -26,6 +26,8 @@ BuildRequires:  perl(IO::CaptureOutput)
 BuildRequires:  perl(IO::Scalar)
 BuildRequires:  perl(XML::Filter::BufferText)
 BuildRequires:  perl(XML::SAX::Writer)
+BuildRequires:  perl(LWP::Simple)
+BuildRequires:  perl(LWP::UserAgent)
 BuildRequires:  expat
 
 BuildArch:	noarch
