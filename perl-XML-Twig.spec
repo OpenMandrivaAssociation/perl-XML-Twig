@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	9
+Release:	10
 
 Summary:	A perl module for processing huge XML documents in tree mode
 License:	Artistic
