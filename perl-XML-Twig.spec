@@ -4,7 +4,7 @@
 Summary:	A perl module for processing huge XML documents in tree mode
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	18
+Release:	19
 License:	Artistic
 Group:		Development/Perl
 Url:		http://www.mirod.org/xmltwig/
