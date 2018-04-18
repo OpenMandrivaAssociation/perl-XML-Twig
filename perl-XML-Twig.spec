@@ -1,14 +1,14 @@
 %define modname	XML-Twig
-%define modver	3.42
+%define modver	3.52
 
 Summary:	A perl module for processing huge XML documents in tree mode
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	21
+Release:	1
 License:	Artistic
 Group:		Development/Perl
 Url:		http://www.mirod.org/xmltwig/
-Source0:	http://www.mirod.org/xmltwig/%{modname}-%{modver}.tar.gz
+Source0:	http://search.cpan.org/CPAN/authors/id/M/MI/MIROD/XML-Twig-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	expat
 BuildRequires:	perl-devel
@@ -21,6 +21,7 @@ BuildRequires:	perl(Unicode::Map8)
 BuildRequires:	perl(XML::Simple)
 BuildRequires:	perl(XML::XPath)
 BuildRequires:	perl(XML::XPathEngine)
+BuildRequires:	perl(Test)
 BuildRequires:	perl(Test::Pod)
 BuildRequires:	perl(IO::CaptureOutput)
 BuildRequires:	perl(IO::Scalar)
