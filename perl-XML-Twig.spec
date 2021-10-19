@@ -40,26 +40,26 @@ XML::Twig is a Perl module that subclasses XML-Parser to allow easy
 processing of XML documents of all sizes.
 
 %prep
-%setup -qn %{modname}-%{modver}
+%autosetup -p1 -n %{modname}-%{modver}
 
 %build
 # TODO:	maintainer:	package them if requested...
-%__perl Makefile.PL INSTALLDIRS=vendor << EOF
+perl Makefile.PL INSTALLDIRS=vendor << EOF
 n
 n
 n
 EOF
-%make
+%make_build
 
 %check
 %make test || :
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %{_bindir}/*
 %{perl_vendorlib}/XML
-%{_mandir}/man1/*
-%{_mandir}/man3/*
+%doc %{_mandir}/man1/*
+%doc %{_mandir}/man3/*
 
