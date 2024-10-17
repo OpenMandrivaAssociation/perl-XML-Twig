@@ -7,7 +7,7 @@ Version:	%perl_convert_version %{modver}
 Release:	4
 License:	Artistic
 Group:		Development/Perl
-Url:		http://metacpan.org/pod/XML::Twig
+Url:		https://metacpan.org/pod/XML::Twig
 Source0:	http://search.cpan.org/CPAN/authors/id/M/MI/MIROD/XML-Twig-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	expat
