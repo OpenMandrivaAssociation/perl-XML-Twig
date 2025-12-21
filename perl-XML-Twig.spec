@@ -10,6 +10,7 @@ Group:		Development/Perl
 Url:		https://metacpan.org/pod/XML::Twig
 Source0:	http://search.cpan.org/CPAN/authors/id/M/MI/MIROD/XML-Twig-%{modver}.tar.gz
 BuildArch:	noarch
+BuildRequires:	make
 BuildRequires:	expat
 BuildRequires:	perl-devel
 BuildRequires:	perl(XML::Parser)
