@@ -1,14 +1,14 @@
 %define modname	XML-Twig
-%define modver	3.52
+%define modver	3.54
 
 Summary:	A perl module for processing huge XML documents in tree mode
 Name:		perl-%{modname}
-Version:	%perl_convert_version %{modver}
-Release:	4
+Version:	%{modver}
+Release:	1
 License:	Artistic
 Group:		Development/Perl
-Url:		https://metacpan.org/pod/XML::Twig
-Source0:	http://search.cpan.org/CPAN/authors/id/M/MI/MIROD/XML-Twig-%{modver}.tar.gz
+Url:		https://github.com/mirod/xmltwig
+Source0:	https://cpan.metacpan.org/authors/id/M/MI/MIROD/XML-Twig-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	make
 BuildRequires:	expat
