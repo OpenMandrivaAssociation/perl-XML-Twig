@@ -4,7 +4,7 @@
 Summary:	A perl module for processing huge XML documents in tree mode
 Name:		perl-%{modname}
 Version:	%{modver}
-Release:	1
+Release:	2
 License:	Artistic
 Group:		Development/Perl
 Url:		https://github.com/mirod/xmltwig
@@ -41,7 +41,7 @@ XML::Twig is a Perl module that subclasses XML-Parser to allow easy
 processing of XML documents of all sizes.
 
 %prep
-%autosetup -p1 -n %{modname}-%{modver}
+%setup -qn %{modname}-%{modver}
 
 %build
 # TODO:	maintainer:	package them if requested...
